@@ -1,7 +1,7 @@
 # WELCOME  
 
 # 💫 About Me:
-I am build interactive and secure web applications, I thrive on solving problems through DSA in C++. I enjoy the thrill of coding contests, constantly pushing my limits to write efficient and elegant solutions.
+I am Chirag and I build interactive and secure web applications, I thrive on solving problems through DSA in C++. I enjoy the thrill of coding contests, constantly pushing my limits to write efficient and elegant solutions.
 
 
 ## 🌐 Socials:
