@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="banner1.svg" alt="CHIRAG WATTAMWAR" width="800"/>
+  <img src="banner (1).svg" alt="CHIRAG WATTAMWAR" width="800"/>
 </div>
 
 ---
