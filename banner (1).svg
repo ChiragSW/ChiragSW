@@ -1,0 +1,60 @@
+<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap');
+
+      .name-red {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 40px;
+        fill: #cc0008;
+        letter-spacing: 3px;
+        animation: red-glitch 6s steps(1) infinite;
+      }
+
+      .name-white {
+        font-family: 'Press Start 2P', monospace;
+        font-size: 40px;
+        fill: #ffffff;
+        letter-spacing: 3px;
+        animation: white-glitch 6s steps(1) infinite;
+      }
+
+      @keyframes red-glitch {
+        0%, 89%, 95%, 100% { transform: translate(0,0); }
+        90%  { transform: translate(-4px, 0); }
+        91%  { transform: translate(4px, 0); }
+        92%  { transform: translate(0, 0); }
+      }
+
+      @keyframes white-glitch {
+        0%, 89%, 95%, 100% { transform: translate(0,0); }
+        90%  { transform: translate(3px, 0); }
+        91%  { transform: translate(-3px, 0); }
+        92%  { transform: translate(0, 0); }
+      }
+
+      /* scanlines */
+      .scanlines {
+        fill: url(#scan);
+        opacity: 0.12;
+      }
+    </style>
+
+    <pattern id="scan" x="0" y="0" width="800" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="800" height="2" fill="black"/>
+      <rect x="0" y="2" width="800" height="2" fill="transparent"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="120" fill="#0a0a0f"/>
+
+  <!-- Red shadow layer -->
+  <text x="406" y="76" text-anchor="middle" class="name-red">CHIRAG WATTAMWAR</text>
+
+  <!-- White front layer -->
+  <text x="400" y="70" text-anchor="middle" class="name-white">CHIRAG WATTAMWAR</text>
+
+  <!-- Scanline overlay -->
+  <rect width="800" height="120" class="scanlines"/>
+</svg>
