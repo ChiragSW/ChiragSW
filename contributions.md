@@ -154,6 +154,21 @@ Added regression tests to ensure invalid-channel inputs raise errors hsv_to_rgb
 </td>
 </tr>
 
+<tr>
+<td width="50%">
+
+[#22543 - keras.ops.sort(axis=None) fails on eager tensors instead of flattening and sorting](https://github.com/keras-team/keras/issues/22543)
+
+</td>
+<td width="50%">
+
+[PR - #22544](https://github.com/keras-team/keras/pull/22544)
+
+Updated the sort operation across TensorFlow and PyTorch backends to support axis=None, ensuring the output correctly flattens and matches NumPy's behavior.
+
+</td>
+</tr>
+
 </table>
 
 <div align="center">
