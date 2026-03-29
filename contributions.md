@@ -169,6 +169,21 @@ Updated the sort operation across TensorFlow and PyTorch backends to support axi
 </td>
 </tr>
 
+<tr>
+<td width="50%">
+
+[#22406 - TextVectorization fails on G4 on Colab (all fine on H100, or A100 and earlier)](https://github.com/keras-team/keras/issues/22406)
+
+</td>
+<td width="50%">
+
+[PR - #22465](https://github.com/keras-team/keras/pull/22465)
+
+Wrapped TF string/hash/lookup operations in with tf.device("CPU:0") to avoid GPU dispatch issues. Added GPU regression tests that are automatically skipped on CPU-only machines.
+
+</td>
+</tr>
+
 </table>
 
 <div align="center">
