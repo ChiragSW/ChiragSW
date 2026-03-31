@@ -184,6 +184,36 @@ Wrapped TF string/hash/lookup operations in with tf.device("CPU:0") to avoid GPU
 </td>
 </tr>
 
+<tr>
+<td width="50%">
+
+[#22058 - Resolve infinite recursion in keras.ops.associative_scan under Tensorflow static graph mode](https://github.com/keras-team/keras/issues/22058)
+
+</td>
+<td width="50%">
+
+[PR - #22072](https://github.com/keras-team/keras/pull/22072)
+
+Resolved an infinite recursion issue encountered in ```keras.ops.associative_scan``` when operating within TensorFlow's static graph mode (tf.function) with symbolic input shapes. The core of the fix involved leveraging static shape information to guide conditional execution, thereby preventing the tracing of recursive paths when the element length is known at graph construction time. This ensures that the associative_scan operation behaves correctly and efficiently under both static and dynamic tensor length scenarios.
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+[#22538 - keras.ops.blackman returns NaN for window length 1](https://github.com/keras-team/keras/issues/22538)
+
+</td>
+<td width="50%">
+
+[PR - #22545](https://github.com/keras-team/keras/pull/22545)
+
+Addressed a critical bug in the ```keras.ops.blackman``` function that caused it to produce NaN outputs for a window length of 1. Implemented a robust solution to prevent division by zero in this specific scenario, ensuring the function consistently returns accurate Blackman window values. 
+
+</td>
+</tr>
+
 </table>
 
 <div align="center">
