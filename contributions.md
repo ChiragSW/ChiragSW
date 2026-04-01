@@ -4,17 +4,28 @@
  
 # Open Source Contributions
  
-</div>
+<br><br>
+<a href="https://github.com/keras-team/keras">
+<img src="kerass.png" width="300"/>
+</a>
+
+<br><br>
  
-### [<img src="kerass.png" width="200"/>](https://github.com/keras-team/keras)
+| Issues Solved | Merged PRs | Ongoing PRs |
+|:-:|:-:|:-:|
+| 15 | 8 | 4 |
+
+</div>
 
 <table>
 <tr>
   <tr>
-    <th width="50%"> Issue</th>
-    <th width="50%"> Merged PR</th>
+    <th width="5%">S.No</th>
+    <th width="45%"> Issue</th>
+    <th width="50%"> Pull Request</th>
   </tr>
-<td width="50%">
+<td width="5%">1</td>
+<td width="45%">
 
 [#22428 - Conv1DTranspose: Invalid Symbolic Shape + Runtime Crash When output_padding ≥ strides
 ](https://github.com/keras-team/keras/issues/22428)
@@ -30,12 +41,13 @@ Validates output_padding < strides, adds tests, improves error clarity
 </tr>
 
 <tr>
-<td width="50%">
+<td>2</td>
+<td>
 
 [#22429 - Conv2DTranspose: Invalid Symbolic Shape + Runtime Crash (output_padding ≥ strides per dimension)(related to #22428)](https://github.com/keras-team/keras/issues/22429)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22439](https://github.com/keras-team/keras/pull/22439)
 
@@ -45,12 +57,13 @@ Validates output_padding < strides, adds tests, improves error clarity
 </tr>
 
 <tr>
-<td width="50%">
+<td>3</td>
+<td>
 
 [#22430 - Conv3DTranspose: Invalid Symbolic Shape + Runtime Crash (output_padding ≥ strides for 3D dimensions)(related to #22428 & #22429)](https://github.com/keras-team/keras/issues/22430)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22439](https://github.com/keras-team/keras/pull/22439)
 
@@ -60,12 +73,13 @@ Validates output_padding < strides, adds tests, improves error clarity
 </tr>
 
 <tr>
-<td width="50%">
+<td>4</td>
+<td>
 
 [#22474 - ConvLSTM1D allows invalid strides/dilation config when built with Keras Input](https://github.com/keras-team/keras/issues/22474)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22477](https://github.com/keras-team/keras/pull/22477)
 
@@ -76,12 +90,13 @@ Added regression tests to ensure symbolic builds now correctly fail across ConvL
 </tr>
 
 <tr>
-<td width="50%">
+<td>5</td>
+<td>
 
 [#22475 - ConvLSTM2D allows invalid strides+dilation_rate config when built with Keras.Input](https://github.com/keras-team/keras/issues/22475)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22477](https://github.com/keras-team/keras/pull/22477)
 
@@ -92,12 +107,13 @@ Added regression tests to ensure symbolic builds now correctly fail across ConvL
 </tr>
 
 <tr>
-<td width="50%">
+<td>6</td>
+<td>
 
 [#22476 - ConvLSTM3D fails to validate incompatible strides and dilation_rate in symbolic mode](https://github.com/keras-team/keras/issues/22476)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22477](https://github.com/keras-team/keras/pull/22477)
 
@@ -108,12 +124,13 @@ Added regression tests to ensure symbolic builds now correctly fail across ConvL
 </tr>
 
 <tr>
-<td width="50%">
+<td>7</td>
+<td>
 
 [#22472 - rgb_to_hsv does not validate channel count for Keras Input with channels_first](https://github.com/keras-team/keras/issues/22472)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22478](https://github.com/keras-team/keras/pull/22478)
 
@@ -124,12 +141,13 @@ Added regression tests to ensure invalid-channel inputs raise errors rgb_to_hsv
 </tr>
 
 <tr>
-<td width="50%">
+<td>8</td>
+<td>
 
 [#22473 - keras.ops.image.hsv_to_rgb accepts invalid channels_first shape in symbolic mode](https://github.com/keras-team/keras/issues/22473)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22478](https://github.com/keras-team/keras/pull/22478)
 
@@ -140,27 +158,29 @@ Added regression tests to ensure invalid-channel inputs raise errors hsv_to_rgb
 </tr>
 
 <tr>
-<td width="50%">
+<td>9</td>
+<td>
 
 [#22479 - AttributeError in ZIP extraction: 'ZipInfo' object has no attribute 'name'](https://github.com/keras-team/keras/issues/22479)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22480](https://github.com/keras-team/keras/pull/22480)
 
- Updated warning message in keras/src/utils/file_utils.py to use finfo.filename instead of finfo.name
+Updated warning message in keras/src/utils/file_utils.py to use finfo.filename instead of finfo.name
 
 </td>
 </tr>
 
 <tr>
-<td width="50%">
+<td>10</td>
+<td>
 
 [#22543 - keras.ops.sort(axis=None) fails on eager tensors instead of flattening and sorting](https://github.com/keras-team/keras/issues/22543)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22544](https://github.com/keras-team/keras/pull/22544)
 
@@ -170,12 +190,13 @@ Updated the sort operation across TensorFlow and PyTorch backends to support axi
 </tr>
 
 <tr>
-<td width="50%">
+<td>11</td>
+<td>
 
 [#22406 - TextVectorization fails on G4 on Colab (all fine on H100, or A100 and earlier)](https://github.com/keras-team/keras/issues/22406)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22465](https://github.com/keras-team/keras/pull/22465)
 
@@ -185,12 +206,13 @@ Wrapped TF string/hash/lookup operations in with tf.device("CPU:0") to avoid GPU
 </tr>
 
 <tr>
-<td width="50%">
+<td>12</td>
+<td>
 
 [#22058 - Resolve infinite recursion in keras.ops.associative_scan under Tensorflow static graph mode](https://github.com/keras-team/keras/issues/22058)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22072](https://github.com/keras-team/keras/pull/22072)
 
@@ -200,12 +222,13 @@ Resolved an infinite recursion issue encountered in ```keras.ops.associative_sca
 </tr>
 
 <tr>
-<td width="50%">
+<td>13</td>
+<td>
 
 [#22538 - keras.ops.blackman returns NaN for window length 1](https://github.com/keras-team/keras/issues/22538)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22545](https://github.com/keras-team/keras/pull/22545)
 
@@ -215,16 +238,33 @@ Addressed a critical bug in the ```keras.ops.blackman``` function that caused it
 </tr>
 
 <tr>
-<td width="50%">
+<td>14</td>
+<td>
 
 [#22539 - keras.ops.flip fails for eager tensors when axis is a list of axes](https://github.com/keras-team/keras/issues/22539)
 
 </td>
-<td width="50%">
+<td>
 
 [PR - #22548](https://github.com/keras-team/keras/pull/22548)
 
 Updated the TensorFlow backend implementation of the flip operation to support multiple axes and negative axis indexing, ensuring consistency with Numpy behavior.
+
+</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td>
+
+[#22535 - MelSpectrogram skips fft_length >= sequence_length validation for symbolic Keras inputs](https://github.com/keras-team/keras/issues/22535)
+
+</td>
+<td>
+
+[PR - #22549](https://github.com/keras-team/keras/pull/22549)
+
+Added a validation check in the MelSpectrogram layer to ensure that fft_length is at least as large as sequence_length, along with a corresponding unit test to verify this behavior.
 
 </td>
 </tr>
