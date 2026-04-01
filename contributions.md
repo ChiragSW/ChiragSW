@@ -214,6 +214,21 @@ Addressed a critical bug in the ```keras.ops.blackman``` function that caused it
 </td>
 </tr>
 
+<tr>
+<td width="50%">
+
+[#22539 - keras.ops.flip fails for eager tensors when axis is a list of axes](https://github.com/keras-team/keras/issues/22539)
+
+</td>
+<td width="50%">
+
+[PR - #22548](https://github.com/keras-team/keras/pull/22548)
+
+Updated the TensorFlow backend implementation of the flip operation to support multiple axes and negative axis indexing, ensuring consistency with Numpy behavior.
+
+</td>
+</tr>
+
 </table>
 
 <div align="center">
