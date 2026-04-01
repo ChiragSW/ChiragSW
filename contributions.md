@@ -13,7 +13,7 @@
  
 | Issues Solved | Merged PRs | Ongoing PRs |
 |:-:|:-:|:-:|
-| 15 | 8 | 4 |
+| 15 | 10 | 4 |
 
 </div>
 
