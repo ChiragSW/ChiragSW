@@ -13,7 +13,7 @@
  
 | Issues Solved | Merged PRs | Ongoing PRs |
 |:-:|:-:|:-:|
-| 15 | 10 | 4 |
+| 16 | 11 | 1 |
 
 </div>
 
@@ -265,6 +265,22 @@ Updated the TensorFlow backend implementation of the flip operation to support m
 [PR - #22549](https://github.com/keras-team/keras/pull/22549)
 
 Added a validation check in the MelSpectrogram layer to ensure that fft_length is at least as large as sequence_length, along with a corresponding unit test to verify this behavior.
+
+</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td>
+
+[#22586 - Mixed Precision (float16) numerical instability in GroupNormalization with small epsilon](https://github.com/keras-team/keras/issues/22586)
+
+</td>
+<td>
+
+[PR - #22589](https://github.com/keras-team/keras/pull/22589)
+
+Updated the GroupNormalization layer to improve numerical stability during mixed precision training. It disables automatic casting for the layer and its weights (gamma and beta) and adds an explicit cast to compute_dtype at the end of the call method.
 
 </td>
 </tr>
