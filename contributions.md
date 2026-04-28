@@ -13,7 +13,7 @@
  
 | Issues Solved | Merged PRs | Ongoing PRs |
 |:-:|:-:|:-:|
-| 16 | 11 | 5 |
+| 17 | 12 | 2 |
 
 </div>
 
@@ -281,6 +281,22 @@ Added a validation check in the MelSpectrogram layer to ensure that fft_length i
 [PR - #22589](https://github.com/keras-team/keras/pull/22589)
 
 Updated the GroupNormalization layer to improve numerical stability during mixed precision training. It disables automatic casting for the layer and its weights (gamma and beta) and adds an explicit cast to compute_dtype at the end of the call method.
+
+</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td>
+
+[PART 1/3: APIs in the keras.ops module lack validity checks when accepting Keras.Input as an input](https://github.com/keras-team/keras/issues/22472#issuecomment-4133026201)
+
+</td>
+<td>
+
+[PR - #22707](https://github.com/keras-team/keras/pull/22707)
+
+Added input validation for image padding and cropping, including helper functions to enforce non-negative and properly specified parameters, along with comprehensive unit tests.
 
 </td>
 </tr>
