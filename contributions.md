@@ -13,7 +13,7 @@
  
 | Issues Solved | Merged PRs | Ongoing PRs |
 |:-:|:-:|:-:|
-| 17 | 12 | 2 |
+| 18 | 13 | 1 |
 
 </div>
 
@@ -289,7 +289,7 @@ Updated the GroupNormalization layer to improve numerical stability during mixed
 <td>17</td>
 <td>
 
-[PART 1/3: APIs in the keras.ops module lack validity checks when accepting Keras.Input as an input](https://github.com/keras-team/keras/issues/22472#issuecomment-4133026201)
+[APIs in the keras.ops module lack validity checks when accepting Keras.Input as an input](https://github.com/keras-team/keras/issues/22472#issuecomment-4133026201)
 
 </td>
 <td>
@@ -297,6 +297,22 @@ Updated the GroupNormalization layer to improve numerical stability during mixed
 [PR - #22707](https://github.com/keras-team/keras/pull/22707)
 
 Added input validation for image padding and cropping, including helper functions to enforce non-negative and properly specified parameters, along with comprehensive unit tests.
+
+</td>
+</tr>
+
+<tr>
+<td>18</td>
+<td>
+
+[Refactor axis validation and canonicalization for targeted review](https://github.com/keras-team/keras/issues/22472#issuecomment-4133026201)
+
+</td>
+<td>
+
+[PR - #22708](https://github.com/keras-team/keras/pull/22708)
+
+Introduced axis normalization utilities and updated various operations, including log_softmax, sparsemax, and roll, to utilize these helpers for more consistent behavior.
 
 </td>
 </tr>
