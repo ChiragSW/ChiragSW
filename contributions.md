@@ -11,9 +11,9 @@
 
 <br><br>
  
-| Issues Solved | Merged PRs | Ongoing PRs |
+| Issues Solved | Issues Reported | Merged PRs |
 |:-:|:-:|:-:|
-| 18 | 13 | 1 |
+| 18 | 1 | 13 |
 
 </div>
 
@@ -316,6 +316,25 @@ Introduced axis normalization utilities and updated various operations, includin
 
 </td>
 </tr>
+
+<tr>
+<td>19</td>
+<td>
+
+[[Bug] PR test-workflow title shows raw template expression instead of evaluated value](https://github.com/keras-team/keras/issues/22776)
+
+</td>
+<td>
+
+[PR - #22824](https://github.com/keras-team/keras/pull/22824)
+
+Replace the dynamic expression with explicit matrix.include fields (name_suffix, runner) so the job name evaluates reliably to:
+- Run tests on TPU for single-device
+- Run tests on multi-TPU for multi-device
+
+</td>
+</tr>
+
 
 </table>
 
