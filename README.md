@@ -2,13 +2,6 @@
   <img src="banner (1).svg" alt="CHIRAG WATTAMWAR" width="800"/>
 </div>
 
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=ChiragSW&theme=radical&hide_border=true&background=0a0a0f&ring=cc0008&fire=cc0008&currStreakLabel=ffffff&sideLabels=ffffff&dates=888888" height="165"/>
-
-</div>
-
 ---
 
 # Open Source Contributions
