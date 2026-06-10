@@ -4,16 +4,10 @@
  
 # Open Source Contributions
  
-<br><br>
+
 <a href="https://github.com/keras-team/keras">
 <img src="kerass.png" width="300"/>
 </a>
-
-<br><br>
- 
-| Issues Solved | Issues Reported | Merged PRs |
-|:-:|:-:|:-:|
-| 18 | 1 | 13 |
 
 </div>
 
@@ -331,6 +325,55 @@ Introduced axis normalization utilities and updated various operations, includin
 Replace the dynamic expression with explicit matrix.include fields (name_suffix, runner) so the job name evaluates reliably to:
 - Run tests on TPU for single-device
 - Run tests on multi-TPU for multi-device
+
+</td>
+</tr>
+
+<tr>
+<td>20</td>
+<td>
+
+[[Bug] Torch divide_no_nan() produces NaN gradients](https://github.com/keras-team/keras/issues/23063)
+
+</td>
+<td>
+
+[PR - #23064](https://github.com/keras-team/keras/pull/23064)
+
+Updated the PyTorch backend implementation of divide_no_nan to prevent gradient issues when division by zero occurs by introducing a safe divisor tensor.
+
+</td>
+</tr>
+
+<tr>
+<td>21</td>
+<td>
+
+[[Bug] Audio padded batching assumes scalar labels](https://github.com/keras-team/keras/issues/23061)
+
+</td>
+<td>
+
+[PR - #23062](https://github.com/keras-team/keras/pull/23062)
+
+Simplified the dataset padding logic in `audio_dataset_utils.py` by removing explicit padded_shapes from padded_batch when the output sequence length is dynamic
+and the dataset is not ragged.
+
+</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td>
+
+[[Bug] Sparse TensorFlow wrapper drops trailing all-zero rows](https://github.com/keras-team/keras/issues/23059)
+
+</td>
+<td>
+
+[PR - #23060](https://github.com/keras-team/keras/pull/23060)
+
+Fixed an issue where trailing empty rows in a `tf.SparseTensor` were truncated during data adaptation. In `array_slicing.py` nrows is now explicitly passed to `tf.experimental.RowPartition.from_value_rowids` using the sparse tensor's dense shape.
 
 </td>
 </tr>
