@@ -378,6 +378,38 @@ Fixed an issue where trailing empty rows in a `tf.SparseTensor` were truncated d
 </td>
 </tr>
 
+<tr>
+<td>23</td>
+<td>
+
+[[Bug]  Empty py generator passed to model.fit raises raw IndexError](https://github.com/keras-team/keras/issues/23072)
+
+</td>
+<td>
+
+[PR - #23074](https://github.com/keras-team/keras/pull/23074)
+
+Added a check to `GeneratorDataAdapter` to raise a clear ValueError when an empty generator is passed.
+
+</td>
+</tr>
+
+<tr>
+<td>24</td>
+<td>
+
+[ValueError when loading SAMImageSegmenter from preset sam_huge_sa1b in Keras Hub](https://github.com/keras-team/keras/issues/23018)
+
+</td>
+<td>
+
+[PR - #23036](https://github.com/keras-team/keras/pull/23036)
+
+Updated the weight saving and loading mechanisms in Keras to recursively resolve and skip nested saveable objects when `objects_to_skip` is provided. Specifically, replaced the shallow ID collection in `save_weights_only` and `load_weights_only` with a recursive helper `_get_saveable_ids` that traverses KerasSaveable objects and standard Python containers (lists, tuples, sets, dicts)
+
+</td>
+</tr>
+
 
 </table>
 
