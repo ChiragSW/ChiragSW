@@ -25,18 +25,4 @@
 |-------|-----------|--------|------|
 | [HackNagpur 2.0](https://www.creadefy.com/verify/CERT-3502D86C-4EB7-492F) | GDG Nagpur | Top 10 Finalist | Jan 2026 |
 
----
-
-<br>
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/chirag-wattamwar-5b985a313/">
-    <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  &nbsp;
-  <a href="mailto:chirag4aiwork@gmail.com">
-    <img src="https://img.shields.io/badge/-chirag4aiwork@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-</div>
-
 </div>
