@@ -7,7 +7,8 @@
 # Open Source Contributions
 
 <div align="left">
-<a href="https://github.com/ChiragSW/ChiragSW/blob/main/contributions.md"><img src="kerass.png" width="150" height="80"/></a>
+<img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/d79f9f25-5967-49d5-bd52-63af63c1b5b2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="120" height="75" alt="image" src="https://github.com/user-attachments/assets/793d54be-fcd1-4070-a149-0fabd6e596b8" />
 <br>
 
 ---
