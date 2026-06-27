@@ -410,6 +410,85 @@ Updated the weight saving and loading mechanisms in Keras to recursively resolve
 </td>
 </tr>
 
+<tr>
+<td>25</td>
+<td>
+
+[[Bug] TorchDataLoaderAdapter corrupts dict and single-tensor batches on non-Torch backends](https://github.com/keras-team/keras/issues/23080)
+
+</td>
+<td>
+
+[PR - #23096](https://github.com/keras-team/keras/pull/23096)
+
+Removed the force change of the dict and single tensor batches to tuple(...). Now tree utilities preserve the batch structure. Added a tf specific normalization so now nested lists to tuples without converting dicts or tensors accidentally. Added regression tests for the same.
+
+</td>
+</tr>
+
+<tr>
+<td>26</td>
+<td>
+
+[[Bug] sklearn wrapper warm_start=True does not reuse model instance weights](https://github.com/keras-team/keras/issues/23097)
+
+</td>
+<td>
+
+[PR - #23098](https://github.com/keras-team/keras/pull/23098)
+
+Added an extra check in the _get_model function so now it uses previous model instead of cloning new one. Also added regression test for the same.
+
+</td>
+</tr>
+
+<tr>
+<td>27</td>
+<td>
+
+[keras.ops.nancumsum returns finite values instead of inf/nan for inputs containing NaN and infinities](https://github.com/keras-team/keras/issues/23130)
+
+</td>
+<td>
+
+[PR - #23135](https://github.com/keras-team/keras/pull/23135)
+
+Updated the nancumsum implementation across the OpenVINO, TensorFlow, and PyTorch backends to ensure that positive and negative infinity values are preserved by passing posinf=float("inf") and neginf=float("-inf") to nan_to_num
+
+</td>
+</tr>
+
+<tr>
+<td>28</td>
+<td>
+
+[keras.ops.nancumprod returns float32 max instead of inf for NaN followed by Inf](https://github.com/keras-team/keras/issues/23127)
+
+</td>
+<td>
+
+[PR - #23134](https://github.com/keras-team/keras/pull/23134)
+
+nan_to_num(x, nan=1.0) used a buggy path, it converted inf values to floats as default. Fixed it such that nancumprod replaces only NaNs with 1.0 preserving inf and -inf.
+
+</td>
+</tr>
+
+<tr>
+<td>29</td>
+<td>
+
+[[Bug] Torch random.shuffle(axis=-1) mishandles negative axes](https://github.com/keras-team/keras/issues/23118)
+
+</td>
+<td>
+
+[PR - #23119](https://github.com/keras-team/keras/pull/23119)
+
+Updated the PyTorch backend's random.shuffle implementation to support negative axes by using canonicalize_axis.
+
+</td>
+</tr>
 
 </table>
 
