@@ -490,6 +490,55 @@ Updated the PyTorch backend's random.shuffle implementation to support negative 
 </td>
 </tr>
 
+<tr>
+<td>30</td>
+<td>
+
+[[Bug] Segmentation mask visualization docs use one-based class labels but implementation uses zero-based indices](https://github.com/keras-team/keras/issues/23088)
+
+</td>
+<td>
+
+[PR - #23114](https://github.com/keras-team/keras/pull/23114)
+
+Updated the segmentation mask visualization utilities to support 0-indexed class indices (from 0 to num_classes - 1) instead of 1-indexed ones, and adjusts the automatic inference of num_classes accordingly.
+
+</td>
+</tr>
+
+<tr>
+<td>31</td>
+<td>
+
+[keras.ops.hypot returns NaN instead of Inf for Inf and -Inf inputs](https://github.com/keras-team/keras/issues/23131)
+
+</td>
+<td>
+
+[PR - #23157](https://github.com/keras-team/keras/pull/23157)
+
+Tf and OpenVINO backends used max * sqrt(1 + (min/max)^2) but inf / inf gives nan
+Now both return positive inf when either input is inf
+
+</td>
+</tr>
+
+<tr>
+<td>32</td>
+<td>
+
+[keras.ops.isclose incorrectly returns False for matching positive and negative infinities](https://github.com/keras-team/keras/issues/23128)
+
+</td>
+<td>
+
+[PR - #23136](https://github.com/keras-team/keras/pull/23136)
+
+TensorFlow and openvino backends computed abs(x1 - x2) <= tolerance; inf - inf becomes NaN, so it returned False. Now fixed it so it only checks finite values.
+
+</td>
+</tr>
+
 </table>
 
 <div align="center">
