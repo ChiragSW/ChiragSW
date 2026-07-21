@@ -539,6 +539,39 @@ TensorFlow and openvino backends computed abs(x1 - x2) <= tolerance; inf - inf b
 </td>
 </tr>
 
+<tr>
+<td>33</td>
+<td>
+
+[[Bug] tf.data class weights fail for omitted classes](https://github.com/keras-team/keras/issues/23071)
+
+</td>
+<td>
+
+[PR - #23073](https://github.com/keras-team/keras/pull/23073)
+
+tf_dataset_adapter.py uses a tf.lookup.StaticHashTable with default 1.0 instead of dense tf.gather and handles empty class_weight={} by returning ones.
+
+</td>
+</tr>
+
+tr>
+<td>34</td>
+<td>
+
+[[Bug] Audio resampling truncates before resampling](https://github.com/keras-team/keras/issues/23068)
+
+</td>
+<td>
+
+[PR - #23069](https://github.com/keras-team/keras/pull/23069)
+
+When sampling_rate is set, WAV decode no longer truncates with desired_samples=output_sequence_length before resampling.
+After resampling _trim_and_pad_audio() applies output_sequence_length to the returned audio. Updated the doc to account for this fix too.
+
+</td>
+</tr>
+
 </table>
 
 <div align="center">
