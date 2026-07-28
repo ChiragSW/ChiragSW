@@ -2,7 +2,7 @@
  
 <img src="banner (2).svg" width="1000px" style="border-radius: 50%;" alt="avatar"/>
  
-# Open Source Contributions
+# Keras
  
 
 <a href="https://github.com/keras-team/keras">
