@@ -15,7 +15,7 @@
   <img width="120" height="75" alt="image" src="https://github.com/user-attachments/assets/793d54be-fcd1-4070-a149-0fabd6e596b8" />
 </a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/ChiragSW/ChiragSW/blob/main/llvm_ctb.md">
+<a href="https://github.com/ChiragSW/ChiragSW/blob/main/tf_ctb.md">
   <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/e947448c-1633-415c-92bd-c3bf262969c1" />
 </a>
 <br>
