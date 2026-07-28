@@ -2,7 +2,7 @@
  
 <img src="banner (2).svg" width="1000px" style="border-radius: 50%;" alt="avatar"/>
  
-# Open Source Contributions
+# LLVM
 
 
 <a href="https://github.com/llvm/llvm-project">
